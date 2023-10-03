@@ -1,0 +1,31 @@
+#include <stdio.h>
+
+int main(){
+
+    float nota=0.0, nota2=0.0, nota3=0.0, formFim=0.0, mgeral=0.0, contaFim=0.0;
+    int numAlunos=0, ret=0;
+
+    do
+      {
+        printf("\nNumero de alunos cadastrados: %d", numAlunos);
+        printf("\nInfome sua primeira nota:");
+        scanf("%f", &nota);
+        printf("informe sua segunda nota:");
+        scanf("%f", &nota2);
+        printf("informe sua terceira nota:");
+        scanf("%f", &nota3);
+      
+        formFim = ((nota * 2 + nota2 * 4 + nota3 * 4) / 10);
+        if (formFim >= 7 ){
+            printf("Parabens! Voce foi aprovado com uma media de: %0.2f", formFim);
+        }
+        else{
+            printf("Sinto muito, voce foi reprovado, com uma media de: %0.02f", formFim);
+        }
+        mgeral += formFim;
+        numAlunos++;
+    } while (retorno > 0);
+     
+     contaFim = mgeral / numAlunos;
+     printf("A media geral da turma foi de: %0.02f", contaFim);
+}
