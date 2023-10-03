@@ -1,0 +1,52 @@
+#include <stdio.h>
+#include <string.h>
+#include <limits.h>
+
+int main(){
+
+    int codeCity=0, numVeiculos=0, numAcidentes=0, meIndice=INT_MAX, maIndice=0, numVeiculosTotal=0, contador=0, veiculosFormula=0, numAcidentesRS=0, totalCidadesRS=0, mediaRS=0;
+    char estado[3], nomenMenor[3], nomenMaior[3];
+
+    do
+    {
+        contador++;
+        printf("informe a cidade:");
+        scanf("%d", &codeCity);
+        printf("Informe a sigla do seu estado: ");
+        scanf("%2s", estado);
+        printf("Quantidade de veículos de passeio na cidade no ano de 1992:");
+        scanf("%d", &numVeiculos);
+        printf("Quantidade de acidentes de transito no ano de 1992: ");
+        scanf("%d", &numAcidentes);
+
+        if (numAcidentes < meIndice)
+        {
+            meIndice = numAcidentes;
+            strcpy(nomenMenor, estado);
+        }
+        else if (numAcidentes > maIndice)
+        {
+            maIndice = numAcidentes;
+            strcpy(nomenMaior, estado);
+        }
+        if (numVeiculos > 0)
+        {
+            numVeiculosTotal += numVeiculos;
+        }
+        if (strcmp(estado, "RS") || strcmp(estado, "rs"))
+        {
+            totalCidadesRS++;
+            numAcidentesRS += numAcidentes;
+        }
+    }
+
+    printf("O menor indice de acidentes e: %d, e a cidade a qual pertence e: %s\n", meIndice, nomenMenor);
+    printf("O maior indice de acidentes de e: %d, e a cidade a qual pertence e: %s\n", maIndice, nomenaMaior);
+
+    veiculosFormula = numVeiculosTotal / contador;
+
+    printf("\nA media de veiculos nas cidades e: %d", veiculosFormula);
+
+    mediaRs = numAcidentesRs / totalCidadesRS;
+    printf("\nA média de acidentes com vítimas nas cidades do RS e :%d", mediaRS);
+}
