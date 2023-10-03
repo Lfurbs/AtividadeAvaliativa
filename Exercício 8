@@ -3,7 +3,7 @@
 int main(){
 
     float salario=0.0, salarioSum=0.0, mSalario=0.0, salarioM=0.0;
-    int filho=0, ret=0, filhoSum=0, mFilho=0, contadorP=0, salarioPerc=0, salarioCalculo=0;
+    int filho=0, filhoSum=0, mFilho=0, contadorP=0, salarioPerc=0, salarioCalculo=0;
 
     do
     {
@@ -26,7 +26,7 @@ int main(){
                     return 0;
                 }
             }
-        } while (retorno > 0);
+        }
 
         printf("Informe seu salario:");
         scanf("%f", &salario);
