@@ -1,0 +1,58 @@
+#include <stdio.h>
+
+int main(){
+
+    float salario=0.0, salarioSum=0.0, mSalario=0.0, salarioM=0.0;
+    int filho=0, ret=0, filhoSum=0, mFilho=0, contadorP=0, salarioPerc=0, salarioCalculo=0;
+
+    do
+    {
+        contadorP++;
+
+        do
+        {
+            printf("Quantas filhos voce tem?");
+            scanf("%d", &filho);
+            mFilho++;
+            if (filho >= 0)
+            {
+                filhoSum += filho;
+                break;
+            }
+            else
+            {
+                printf("\nValor nao e valido")
+                {
+                    return 0;
+                }
+            }
+        } while (retorno > 0);
+
+        printf("Informe seu salario:");
+        scanf("%f", &salario);
+        fflush(stdin);
+        if (salario >= 0)
+          {
+            salarioSum += salario;
+            if (salario > salarioM)
+            {
+                salarioMaior = salario;
+            }
+          }
+        else if (salario <= 100)
+          {
+            salarioPerc++;
+          }
+      } while (salario >= 0);
+
+    mSalario = salarioSum / contadorP;
+    printf("\nA media salarial e igual a: %0.2f", mSalario);
+
+    float filhoCalculo = (float)filhoSum / mFilho;
+    printf("\nA media de filhos por pessoa e: %0.2f", filhoCalculo);
+
+    printf("\nO maior salario e registrado e: %0.2f\n", salarioM);
+
+    salarioCalculo = salarioPerc * 100 / contadorP;
+    printf("O percentual de pessoas com valor de ate 100 reais e: %d", salarioCalculo);
+}
