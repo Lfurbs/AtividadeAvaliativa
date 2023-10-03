@@ -1,0 +1,15 @@
+#include<stdio.h>
+#include<math.h>
+
+int main(){
+
+   int num = 0;
+   float result=0.0;
+
+   printf("De um valor para x:");
+   scanf("%d", &num);
+
+   
+    result = ((5*num + 3)/sqrt(pow(num, 2) - 16));
+    printf("O resultado de f(x) e: %0.2f", result);    
+}
