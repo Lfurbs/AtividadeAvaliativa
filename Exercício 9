@@ -2,7 +2,7 @@
 
 int main(){
 
-    int voto=0, nulo=0, ret=0, branco=0, candidato=0, candidato2=0, candidato3=0, candidato4=0;
+    int voto=0, nulo=0, branco=0, candidato=0, candidato2=0, candidato3=0, candidato4=0;
 
     do
     {
@@ -43,7 +43,7 @@ int main(){
         {
             printf("Opcao invalida");
         }
-    } while (retorno > 0);
+    }
 
     printf("\nA Candidato 1: %d votos", candidato1);
     printf("\nCandidato 2: %d votos", candidato2);
