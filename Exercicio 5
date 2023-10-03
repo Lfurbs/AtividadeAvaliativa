@@ -1,0 +1,21 @@
+#include<stdio.h>
+#include<math.h>
+
+int main(){
+
+   float x=0, y=0, x2=0, y2=0, dist=0;
+
+   printf("De um valor para o primeiro x:");
+   scanf("%f", &x);
+   printf("De um valor para o segundo x:");
+   scanf("%f", &x2);
+   printf("De um valor para o primeiro y:");
+   scanf("%f", &y);
+   printf("De um valor para o segundo y:");
+   scanf("%f", &y2);
+
+   dist = sqrt(pow(x2 - x,2)+pow(y2 - y,2));
+
+   printf("A ditancia e %0.4f", dist);
+
+}
