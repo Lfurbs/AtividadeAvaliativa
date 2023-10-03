@@ -1,0 +1,54 @@
+#include <stdio.h>
+
+int main(){
+
+    int voto=0, nulo=0, ret=0, branco=0, candidato=0, candidato2=0, candidato3=0, candidato4=0;
+
+    do
+    {
+        printf("Emqual candidato voce ira votar? Candidato 1,2,3 ou 4? Vote 5 para nulo e 6 para voto em branco");
+        scanf("%d", &voto);
+
+        if (voto >= 1 && voto <= 6)
+        {
+            switch (voto)
+            {
+            case 1:
+                candidato++;
+                break;
+            case 2:
+                candidato2++;
+                break;
+            case 3:
+                candidato3++;
+                break;
+            case 4:
+                candidato4++;
+                break;
+            case 5:
+                nulo++;
+                break;
+            case 6:
+                branco++;
+                break;
+            default:
+                break;
+            }
+        }
+        else if (voto == 0)
+        {
+            break;
+        }
+        else
+        {
+            printf("Opcao invalida");
+        }
+    } while (retorno > 0);
+
+    printf("\nA Candidato 1: %d votos", candidato1);
+    printf("\nCandidato 2: %d votos", candidato2);
+    printf("\nCandidato 3: %d votos", candidato3);
+    printf("\nCandidato 4: %d votos", candidato4);
+    printf("\nVotos nulos: %d", nulo);
+    printf("\nVotos em branco: %d", branco);
+}
